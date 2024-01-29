@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link rel="stylesheet" href="ac-style.css">
+    <title>Fall Fiesta 2024 - Contact Us</title>
+</head>
+<body onload="javascript:bannerStartUp();">
+    <div class="container">
+        <nav>
+            <div class="welcome-container">
+                <h1 class="welcome-text">Welcome to the 2024 Fall Fiesta 🎉</h1>
+            </div>
+            <a href="purchase.html">
+                <button>Purchase Tickets</button>
+            </a>
+        </nav>
+        <div class="side-bar">
+            <div class="logo-container">
+                <img src="images/logo.png" alt="Fall Fiesta Offical Logo of 2024" class="logo">
+            </div>
+            <div class="container-pages">
+                <a href="index.html" class="side-link">
+                    Home Page
+                </a>
+                <a href="contact.html" class="side-link">
+                    Contact Us
+                </a>
+                <a href="about.html" class="side-link">
+                    About Us
+                </a>
+                <a href="#" class="side-link">
+                    Vendor Info
+                </a>
+                <a href="#" class="side-link">
+                    Sponsor Info
+                </a>
+                <a href="#" class="side-link">
+                    FAQs
+                </a>
+                <a href="#" class="side-link">
+                    Volunteer Opportunities
+                </a>
+            </div>
+        </div>
+        <div class="content-1">
+            <div class="one">
+                <h1>Contact Us</h1>
+                <p>Email:isabel@dinubachamber.com</p>
+                <p>Phone:(805)462-9341</p>
+            </div>
+        </div>
+        <div class="content-2">
+            <div class="two">
+                <h1>Address</h1>
+                <p> 1920, main street, Cape Warmmis, CA, 93468</p>
+            </div>
+        </div>
+        <div class="content-3">
+            <div class="three">
+              <h1>Operating Hours</h1>
+              <p>Our Sales Hours: 4:00 p.m. to 10:00 p.m. Friday, 9:00 a.m. to 10:00 p.m. Saturday.</p>
+              <p>Live Performances start at 6:00 p.m.</p>
+            </div>
+        </div>
+        <div class="content-4">
+            <div><p>If you are intrested in becoming a vender or sponsor please contact us using the phone number or email. Thank you!</p></div>
+            <img src="greatdepresion.png" alt="great depresion enjoyment" style="height: 300px;">
+        </div>
+          
+    </div>
+</body>
+<script href="script.js">
+    const countDownDate = new Date("Jan 30, 2024 00:00:00").getTime();
+
+    const countdown = setInterval(function() {
+
+        const now = new Date().getTime();
+
+        const distance = countDownDate - now;
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("countdown").innerHTML =
+            days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+        if (distance < 0) {
+            clearInterval(countdown);
+            document.getElementById("countdown").innerHTML = "THE FESTIVAL IS HERE!";
+        }
+    }, 1000);
+
+    let imgArray = new Array();
+    let imgIndex = 0;
+
+    function imgCycle() {
+      document.getElementById('array-img').src = imgArray[imgIndex].src;
+      imgIndex++;
+      if (imgIndex > 30)
+      {
+        imgIndex = 0;
+      }
+      setTimeout("imgCycle()", 1500);
+      return;
+    }
+
+    function bannerStartUp () {
+      imgArray[0] = new Image;
+      imgArray[0].src = 'images/image(1).jpg';
+      imgArray[1] = new Image;
+      imgArray[1].src = "images/image(2).jpg";
+      imgArray[2] = new Image;
+      imgArray[2].src = "images/image(3).jpg";
+      imgArray[3] = new Image;
+      imgArray[3].src = "images/image(4).jpg";
+      imgArray[4] = new Image;
+      imgArray[4].src = "images/image(5).jpg";
+      imgArray[5] = new Image;
+      imgArray[5].src = "images/image(6).jpg";
+      imgArray[6] = new Image;
+      imgArray[6].src = "images/image(7).jpg";
+      imgArray[7] = new Image;
+      imgArray[7].src = "images/image(8).jpg";
+      imgArray[8] = new Image;
+      imgArray[8].src = "images/image(9).jpg";
+      imgArray[9] = new Image;
+      imgArray[9].src = "images/image(10).jpg";
+      imgArray[10] = new Image;
+      imgArray[10].src = "images/image (11).jpg";
+      imgArray[11] = new Image;
+      imgArray[11].src = "images/image (12).jpg";
+      imgArray[12] = new Image;
+      imgArray[12].src = "images/image (13).jpg";
+      imgArray[13] = new Image;
+      imgArray[13].src = "images/image (14).jpg";
+      imgArray[14] = new Image;
+      imgArray[14].src = "images/image (15).jpg";
+      imgArray[15] = new Image;
+      imgArray[15].src = "images/image (16).jpg";
+      imgArray[16] = new Image;
+      imgArray[16].src = "images/image (17).jpg";
+      imgArray[17] = new Image;
+      imgArray[17].src = "images/image (18).jpg";
+      imgArray[18] = new Image;
+      imgArray[18].src = "images/image (19).jpg";
+      imgArray[19] = new Image;
+      imgArray[19].src = "images/image (20).jpg";
+      imgArray[20] = new Image;
+      imgArray[20].src = "images/image (21).jpg";
+      imgArray[21] = new Image;
+      imgArray[21].src = "images/image (22).jpg";
+      imgArray[22] = new Image;
+      imgArray[22].src = "images/image (23).jpg";
+      imgArray[23] = new Image;
+      imgArray[23].src = "images/image (24).jpg";
+      imgArray[24] = new Image;
+      imgArray[24].src = "images/image (25).jpg";
+      imgArray[25] = new Image;
+      imgArray[25].src = "images/image (26).jpg";
+      imgArray[26] = new Image;
+      imgArray[26].src = "images/image (27).jpg";
+      imgArray[27] = new Image;
+      imgArray[27].src = "images/image (28).jpg";
+      imgArray[28] = new Image;
+      imgArray[28].src = "images/image (29).jpg";
+      imgArray[29] = new Image;
+      imgArray[29].src = "images/image (30).jpg";
+      imgArray[30] = new Image;
+      imgArray[30].src = "images/image (31).jpg";
+      imgCycle();
+      return;
+    }
+</script>
+</html>
